@@ -1,5 +1,6 @@
 # CHIP8
 My own version of a CHIP-8 emulator written in JavaScript.
+
 Try it out in the browser here: https://ericlju.github.io/CHIP8/
 
 # License
