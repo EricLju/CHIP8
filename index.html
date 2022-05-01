@@ -1,0 +1,300 @@
+<!doctype html>
+
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+    <button id="mobile_mode_button" type="button" class="cellphone_btn" onclick="onMoblieModeClick()"></button>
+    
+
+    <div id="mainview" class="">
+
+
+    <div class="canvasHolder">  
+      <div id="canvasAligner" class="pageHolder">
+        <canvas id="cavasDisplay" width="640" height="320" style=""></canvas>
+      </div>
+
+      <div id="mobile_holder" class="mobile_holder">
+      <div id="mini_keyboard_full" class="mini_keyboard_full_container">
+        <button type="button" class="mini_keyboard_full_key" value="1" onpointerdown="onMobileKeyDown(value)" onpointerup="onMobileKeyUp(value)" onpointerout="onMobileKeyUp(value)">1</button>
+        <button type="button" class="mini_keyboard_full_key" value="2" onpointerdown="onMobileKeyDown(value)" onpointerup="onMobileKeyUp(value)" onpointerout="onMobileKeyUp(value)">2</button>
+        <button type="button" class="mini_keyboard_full_key" value="3" onpointerdown="onMobileKeyDown(value)" onpointerup="onMobileKeyUp(value)" onpointerout="onMobileKeyUp(value)">3</button>
+        <button type="button" class="mini_keyboard_full_key" value="4" onpointerdown="onMobileKeyDown(value)" onpointerup="onMobileKeyUp(value)" onpointerout="onMobileKeyUp(value)">4</button>
+        </br>
+        <button type="button" class="mini_keyboard_full_key" value="q" onpointerdown="onMobileKeyDown(value)" onpointerup="onMobileKeyUp(value)" onpointerout="onMobileKeyUp(value)">Q</button>
+        <button type="button" class="mini_keyboard_full_key" value="w" onpointerdown="onMobileKeyDown(value)" onpointerup="onMobileKeyUp(value)" onpointerout="onMobileKeyUp(value)">W</button>
+        <button type="button" class="mini_keyboard_full_key" value="e" onpointerdown="onMobileKeyDown(value)" onpointerup="onMobileKeyUp(value)" onpointerout="onMobileKeyUp(value)">E</button>
+        <button type="button" class="mini_keyboard_full_key" value="r" onpointerdown="onMobileKeyDown(value)" onpointerup="onMobileKeyUp(value)" onpointerout="onMobileKeyUp(value)">R</button>
+        </br>
+        <button type="button" class="mini_keyboard_full_key" value="a" onpointerdown="onMobileKeyDown(value)" onpointerup="onMobileKeyUp(value)" onpointerout="onMobileKeyUp(value)">A</button>
+        <button type="button" class="mini_keyboard_full_key" value="s" onpointerdown="onMobileKeyDown(value)" onpointerup="onMobileKeyUp(value)" onpointerout="onMobileKeyUp(value)">S</button>
+        <button type="button" class="mini_keyboard_full_key" value="d" onpointerdown="onMobileKeyDown(value)" onpointerup="onMobileKeyUp(value)" onpointerout="onMobileKeyUp(value)">D</button>
+        <button type="button" class="mini_keyboard_full_key" value="f" onpointerdown="onMobileKeyDown(value)" onpointerup="onMobileKeyUp(value)" onpointerout="onMobileKeyUp(value)">F</button>
+        </br>
+        <button type="button" class="mini_keyboard_full_key" value="z" onpointerdown="onMobileKeyDown(value)" onpointerup="onMobileKeyUp(value)" onpointerout="onMobileKeyUp(value)">Z</button>
+        <button type="button" class="mini_keyboard_full_key" value="x" onpointerdown="onMobileKeyDown(value)" onpointerup="onMobileKeyUp(value)" onpointerout="onMobileKeyUp(value)">X</button>
+        <button type="button" class="mini_keyboard_full_key" value="c" onpointerdown="onMobileKeyDown(value)" onpointerup="onMobileKeyUp(value)" onpointerout="onMobileKeyUp(value)">C</button>
+        <button type="button" class="mini_keyboard_full_key" value="d" onpointerdown="onMobileKeyDown(value)" onpointerup="onMobileKeyUp(value)" onpointerout="onMobileKeyUp(value)">D</button>
+      </div>
+
+      <div id="mini_keyboard_small" class="mini_keyboard_full_container">
+        <button type="button" class="mini_keyboard_full_key" value="1" onpointerdown="onMobileKeyDown(value)" onpointerup="onMobileKeyUp(value)" onpointerout="onMobileKeyUp(value)">1</button>
+        </br>
+        <button type="button" class="mini_keyboard_full_key" value="q" onpointerdown="onMobileKeyDown(value)" onpointerup="onMobileKeyUp(value)" onpointerout="onMobileKeyUp(value)">Q</button>
+        <button type="button" class="mini_keyboard_full_key" value="w" onpointerdown="onMobileKeyDown(value)" onpointerup="onMobileKeyUp(value)" onpointerout="onMobileKeyUp(value)">W</button>
+        <button type="button" class="mini_keyboard_full_key" value="e" onpointerdown="onMobileKeyDown(value)" onpointerup="onMobileKeyUp(value)" onpointerout="onMobileKeyUp(value)">E</button>
+        </br>
+        <button type="button" class="mini_keyboard_full_key" value="a" onpointerdown="onMobileKeyDown(value)" onpointerup="onMobileKeyUp(value)" onpointerout="onMobileKeyUp(value)">A</button>
+        <button type="button" class="mini_keyboard_full_key" value="s" onpointerdown="onMobileKeyDown(value)" onpointerup="onMobileKeyUp(value)" onpointerout="onMobileKeyUp(value)">S</button>
+        <button type="button" class="mini_keyboard_full_key" value="d" onpointerdown="onMobileKeyDown(value)" onpointerup="onMobileKeyUp(value)" onpointerout="onMobileKeyUp(value)">D</button>
+      </div>
+      
+      <div id="mini_keyboard_wasd" class="mini_keyboard_full_container">
+        <button type="button" class="mini_keyboard_full_blank"></button>
+        <button type="button" class="mini_keyboard_full_key" value="w" onpointerdown="onMobileKeyDown(value)" onpointerup="onMobileKeyUp(value)" onpointerout="onMobileKeyUp(value)">W</button>
+        </br>
+        <button type="button" class="mini_keyboard_full_key" value="a" onpointerdown="onMobileKeyDown(value)" onpointerup="onMobileKeyUp(value)" onpointerout="onMobileKeyUp(value)">A</button>
+        <button type="button" class="mini_keyboard_full_key" value="s" onpointerdown="onMobileKeyDown(value)" onpointerup="onMobileKeyUp(value)" onpointerout="onMobileKeyUp(value)">S</button>
+        <button type="button" class="mini_keyboard_full_key" value="d" onpointerdown="onMobileKeyDown(value)" onpointerup="onMobileKeyUp(value)" onpointerout="onMobileKeyUp(value)">D</button>
+      </div>
+    </div>
+    </div>
+
+    <div id="mainview" class="ghostHolder">
+    <div class="pageHolder">
+
+    
+    
+    <div class="rowLoad">
+      <div class="columnLoad">
+        
+        <div class="columnLoadHeader">
+          <span>Load Built In ROM:</span>
+        </div>
+        
+        <p>
+          <select id="ROMS" name="ROMS" onchange="loadROMSelection()">
+            <option value="chip8_rom" selected>Startup Intro</option>
+            <option value="invaders_rom">Space Invaders</option>
+            <option value="danm8ku_rom">Danm8ku</option>
+            <option value="pong_rom">Pong</option>
+            <option value="snake_rom">Snake</option>
+          </select>
+        </p>
+
+      </div>
+      <div class="columnLoad">
+
+        <div class="columnLoadHeader">
+          <span>Load ROM From File:</span>
+        </div>
+
+        <p>
+          <input type="file" onchange="showFileBrowser(this)">
+        </p>
+      </div>
+
+      <div class="columnLoad">
+        <div class="columnLoadHeader">
+          <span>Quick Settings:</span>
+        </div>
+        <div style="padding-top:10px">
+          <input type="checkbox" id="soundMute" name="soundMute" value="mute" onclick="onMuteClick(this)">
+          <label for="soundMute">Mute Sound</label>&nbsp;&nbsp;
+          <input type="button" class="defualtBtn" value="Reset" onclick="htmlButtonReset()">
+          </br>
+          </br>
+          <label for="soundGainSlider">Volume: </label>
+          <input type="range" min="0.0" max="1.0" value="0.5" step="0.05" class="slider" id="soundGainSlider" onchange="setAudioVolume(value)">
+        </div>
+      </div>
+    </div>
+    
+    <button type="button" class="collapsible" id="ROMDiscriptionCollapsible" onclick="onCollapsibleClick(this)">ROM Description</button>
+    <div class="content">
+      <p style="font-size: 16px;" id="htmlDescription"></p>
+    </div>
+
+    <button type="button" class="collapsible" onclick="onCollapsibleClick(this)">Emulator Options</button>
+    <div class="content">
+      <form>
+
+        <p>Display Wrapping:&nbsp;&nbsp;
+        <input type="checkbox" id="wrapX" name="wrapX" onclick="wrapXCheckboxClick()"
+         checked>
+        <label for="wrapX">Wrap X</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="checkbox" id="wrapY" name="wrapY" onclick="wrapYCheckboxClick()"
+         checked>
+        <label for="wrapY">Wrap Y</label>
+        </p>
+        
+        <p>
+          Shift Compatability:&nbsp;&nbsp;
+          <input type="radio" id="shiftVy" name="userShiftCompatability" value="shiftVy" checked>
+          <label for="shiftVy">Shift Vy and store in Vx</label>
+          &nbsp;&nbsp;
+          <input type="radio" id="shiftVx" name="userShiftCompatability" value="shiftVx">
+          <label for="shiftVx">Shift Vx and store in Vx</label>
+        </p>
+
+        <label for="emuTargetFreq">Emulation Cycle Rate:</label>
+          
+        <input type="number" id="emuTargetFreq" name="targetFreq"
+       min="1" max="2000" value="8" onchange="onOptionCycleRateChange(value)">
+       <label for="emuTargetFreq"> Instructions Every Draw Frame</label>
+      </form>
+    </div>
+
+    <button type="button" class="collapsible" onclick="onCollapsibleClick(this); onEmulatorInternalsClick()">Emulator Internals</button>
+    <div class="content">
+      <div style="text-align: center;">
+        <p style="white-space: pre;" id="state-msg"></p>
+      </div>
+    <form>
+      <table>
+        <tr>
+          <td colspan="2" style="text-align: center;">
+            <input type="radio" id="bin" name="registerBase" value="2" onchange="updateOutputRegisterBase(value)">
+            <label for="bin">binary</label>&nbsp;&nbsp;
+            <input type="radio" id="hex" name="registerBase" value="16" onchange="updateOutputRegisterBase(value)"" checked>
+            <label for="hex">hexadecimal</label>&nbsp;&nbsp;
+            <input type="radio" id="dec" name="registerBase" value="10" onchange="updateOutputRegisterBase(value)">
+            <label for="dec">decimal</label>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <input type="button" class="defualtBtn" value="Step" onclick="runPC()">
+            <input type="button" class="defualtBtn" value="Run" onclick="runningSwitcher()">
+            <input type="button" class="defualtBtn" value="Reset" onclick="htmlButtonReset()">
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="tbPC">PC:</label>
+            <input type="text" id="tbPC" name="tbPC" size="16">
+            
+            <br>
+          </td>
+          <td>
+            <label for="tbI">I:</label>
+            <input type="text" id="tbI" name="tbI" size="17"><br>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="tbV0">V0:</label>
+            <input type="text" id="tbV0" name="tbV0" size="8"><br>
+          </td>
+          <td>
+            <label for="tbV8">V8:</label>
+            <input type="text" id="tbV8" name="tbV8" size="8"><br>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="tbV1">V1:</label>
+            <input type="text" id="tbV1" name="tbV1" size="8"><br>
+          </td>
+          <td>
+            <label for="tbV9">V9:</label>
+            <input type="text" id="tbV9" name="tbV9" size="8"><br>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="tbV2">V2:</label>
+            <input type="text" id="tbV2" name="tbV2" size="8"><br>
+          </td>
+          <td>
+            <label for="tbVA">VA:</label>
+            <input type="text" id="tbVA" name="tbVA" size="8"><br>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="tbV3">V3:</label>
+            <input type="text" id="tbV3" name="tbV3" size="8"><br>
+          </td>
+          <td>
+            <label for="tbVB">VB:</label>
+            <input type="text" id="tbVB" name="tbVB" size="8"><br>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="tbV4">V4:</label>
+            <input type="text" id="tbV4" name="tbV4" size="8"><br>
+          </td>
+          <td>
+            <label for="tbVC">VC:</label>
+            <input type="text" id="tbVC" name="tbVC" size="8"><br>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="tbV5">V5:</label>
+            <input type="text" id="tbV5" name="tbV5" size="8"><br>
+          </td>
+          <td>
+            <label for="tbVD">VD:</label>
+            <input type="text" id="tbVD" name="tbVD" size="8"><br>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="tbV6">V6:</label>
+            <input type="text" id="tbV6" name="tbV6" size="8"><br>
+          </td>
+          <td>
+            <label for="tbVE">VE:</label>
+            <input type="text" id="tbVE" name="tbVE" size="8"><br>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="tbV7">V7:</label>
+            <input type="text" id="tbV7" name="tbV7" size="8"><br>
+          </td>
+          <td>
+            <label for="tbVF">VF:</label>
+            <input type="text" id="tbVF" name="tbVF" size="8"><br>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="tbDT">DT:</label>
+            <input type="text" id="tbDT" name="tbDT" size="8"><br>
+          </td>
+          <td>
+            <label for="tbST">ST:</label>
+            <input type="text" id="tbST" name="tbST" size="8"><br>
+          </td>
+        </tr>
+      </table>
+    </form>
+    </br>
+    
+    </div>
+    </div>
+    </div>
+
+    
+    <table id="memdump"></table>
+
+    <script src="c8/c8_globals.js"></script>
+    <script src="c8/c8_compatability_list.js"></script>
+    <script src="c8/c8_audio.js"></script>
+    <script src="c8/c8_input.js"></script>
+    <script src="c8/c8_helpers.js"></script>
+    <script src="c8/c8_instructions.js"></script>
+    <script src="c8/c8_data.js"></script>
+    <script src="c8/c8_active_html_handler.js"></script>
+    <script src="c8/c8_main.js"></script>
+
+  </body>
+</html>
